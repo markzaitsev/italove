@@ -1,0 +1,456 @@
+{
+  "categories": {
+    "pasta": {
+      "name": "Pasta",
+      "picture": "/assets/recipes/1/poster.png",
+      "accent": "#4c3c2b"
+    },
+    "pizza": {
+      "name": "Pizza",
+      "picture": "/assets/recipes/3/poster.png",
+      "accent": "#bf844d"
+    },
+    "soups": {
+      "name": "Soups",
+      "picture": "/assets/recipes/5/poster.png",
+      "accent": "#59311a"
+    },
+    "salads": {
+      "name": "Salads",
+      "picture": "/assets/recipes/7/poster.png",
+      "accent": "#925400"
+    },
+    "desserts": {
+      "name": "Desserts",
+      "picture": "/assets/recipes/9/poster.png",
+      "accent": "#bab5af"
+    },
+    "breakfasts": {
+      "name": "Breakfasts",
+      "picture": "/assets/recipes/11/poster.png",
+      "accent": "#d4c9c2"
+    }
+  },
+  "recipes": {
+    "1": {
+      "name": "Spaghetti Carbonara",
+      "description": "Classic Italian pasta with eggs, pancetta, and Parmesan cheese.",
+      "picture": "/assets/recipes/1/poster.png",
+      "category": "pasta",
+      "cooktime": 20,
+      "ingredients": [
+        { "name": "Spaghetti", "count": "250 g" },
+        { "name": "Pancetta", "count": "150 g" },
+        { "name": "Eggs", "count": "2 pcs" },
+        { "name": "Parmesan", "count": "50 g" }
+      ],
+      "steps": [
+        {
+          "name": "Cook Pasta",
+          "description": "Boil spaghetti until al dente.",
+          "picture": "/assets/recipes/1/boil.png"
+        },
+        {
+          "name": "Cook Pancetta",
+          "description": "Fry pancetta until crispy.",
+          "picture": "/assets/recipes/1/pancetta.png"
+        },
+        {
+          "name": "Prepare Sauce",
+          "description": "Mix eggs with grated Parmesan cheese.",
+          "picture": "/assets/recipes/1/sause.png"
+        },
+        {
+          "name": "Combine",
+          "description": "Mix pasta with pancetta and egg mixture, then serve.",
+          "picture": "/assets/recipes/1/poster.png"
+        }
+      ]
+    },
+    "2": {
+      "name": "Penne Arrabbiata",
+      "description": "Spicy pasta with tomato sauce and garlic.",
+      "picture": "/assets/recipes/2/poster.png",
+      "category": "pasta",
+      "cooktime": 25,
+      "ingredients": [
+        { "name": "Penne", "count": "250 g" },
+        { "name": "Tomato Sauce", "count": "300 ml" },
+        { "name": "Garlic", "count": "2 cloves" },
+        { "name": "Chili Flakes", "count": "1 tsp" }
+      ],
+      "steps": [
+        {
+          "name": "Cook Pasta",
+          "description": "Boil penne until tender.",
+          "picture": "/assets/recipes/2/boil.png"
+        },
+        {
+          "name": "Prepare Base",
+          "description": "Sauté garlic and chili flakes in olive oil.",
+          "picture": "/assets/recipes/2/prepare.png"
+        },
+        {
+          "name": "Add Sauce",
+          "description": "Pour in tomato sauce and simmer.",
+          "picture": "/assets/recipes/2/sause.png"
+        },
+        {
+          "name": "Serve",
+          "description": "Mix pasta with sauce and serve hot.",
+          "picture": "/assets/recipes/2/poster.png"
+        }
+      ]
+    },
+    "3": {
+      "name": "Margherita Pizza",
+      "description": "Traditional pizza with tomatoes, mozzarella, and basil.",
+      "picture": "/assets/recipes/3/poster.png",
+      "category": "pizza",
+      "cooktime": 35,
+      "ingredients": [
+        { "name": "Pizza Dough", "count": "1 piece" },
+        { "name": "Tomato Sauce", "count": "100 ml" },
+        { "name": "Mozzarella", "count": "150 g" },
+        { "name": "Basil", "count": "10 leaves" }
+      ],
+      "steps": [
+        {
+          "name": "Prepare Dough",
+          "description": "Stretch the dough into a pizza shape.",
+          "picture": "/assets/recipes/3/prepare.png"
+        },
+        {
+          "name": "Add Toppings",
+          "description": "Spread sauce and add mozzarella.",
+          "picture": "/assets/recipes/3/sause.png"
+        },
+        {
+          "name": "Bake",
+          "description": "Bake in a hot oven for 12–15 minutes.",
+          "picture": "/assets/recipes/3/bake.png"
+        },
+        {
+          "name": "Finish",
+          "description": "Add fresh basil before serving.",
+          "picture": "/assets/recipes/3/poster.png"
+        }
+      ]
+    },
+    "4": {
+      "name": "Pizza Marinara",
+      "description": "Simple Italian pizza with tomato sauce and garlic.",
+      "picture": "/assets/recipes/4/poster.png",
+      "category": "pizza",
+      "cooktime": 30,
+      "ingredients": [
+        { "name": "Pizza Dough", "count": "1 piece" },
+        { "name": "Tomato Sauce", "count": "120 ml" },
+        { "name": "Garlic", "count": "3 cloves" },
+        { "name": "Olive Oil", "count": "1 tbsp" }
+      ],
+      "steps": [
+        {
+          "name": "Shape Dough",
+          "description": "Roll out the pizza dough.",
+          "picture": "/assets/recipes/4/prepare.png"
+        },
+        {
+          "name": "Add Ingredients",
+          "description": "Spread sauce and sliced garlic.",
+          "picture": "/assets/recipes/4/add.png"
+        },
+        {
+          "name": "Bake Pizza",
+          "description": "Bake until golden and crisp.",
+          "picture": "/assets/recipes/4/bake.png"
+        },
+        {
+          "name": "Serve",
+          "description": "Drizzle with olive oil and enjoy.",
+          "picture": "/assets/recipes/4/poster.png"
+        }
+      ]
+    },
+    "5": {
+      "name": "Minestrone Soup",
+      "description": "Hearty vegetable soup with beans and pasta.",
+      "picture": "/assets/recipes/5/poster.png",
+      "category": "soups",
+      "cooktime": 40,
+      "ingredients": [
+        { "name": "Mixed Vegetables", "count": "300 g" },
+        { "name": "Beans", "count": "150 g" },
+        { "name": "Small Pasta", "count": "100 g" },
+        { "name": "Vegetable Broth", "count": "1 L" }
+      ],
+      "steps": [
+        {
+          "name": "Prepare Vegetables",
+          "description": "Chop all vegetables into small pieces.",
+          "picture": "/assets/recipes/5/prepare.png"
+        },
+        {
+          "name": "Cook Base",
+          "description": "Simmer vegetables in broth.",
+          "picture": "/assets/recipes/5/boil.png"
+        },
+        {
+          "name": "Add Beans and Pasta",
+          "description": "Add beans and pasta until cooked.",
+          "picture": "/assets/recipes/5/beans.png"
+        },
+        {
+          "name": "Serve",
+          "description": "Serve warm with grated Parmesan.",
+          "picture": "/assets/recipes/5/poster.png"
+        }
+      ]
+    },
+    "6": {
+      "name": "Tuscan Tomato Soup",
+      "description": "Rich tomato soup inspired by Tuscany.",
+      "picture": "/assets/recipes/6/poster.png",
+      "category": "soups",
+      "cooktime": 35,
+      "ingredients": [
+        { "name": "Tomatoes", "count": "500 g" },
+        { "name": "Garlic", "count": "2 cloves" },
+        { "name": "Vegetable Broth", "count": "800 ml" },
+        { "name": "Basil", "count": "10 leaves" }
+      ],
+      "steps": [
+        {
+          "name": "Cook Tomatoes",
+          "description": "Sauté tomatoes and garlic.",
+          "picture": "/assets/recipes/6/cook.png"
+        },
+        {
+          "name": "Add Broth",
+          "description": "Pour in broth and simmer.",
+          "picture": "/assets/recipes/6/broth.png"
+        },
+        {
+          "name": "Blend",
+          "description": "Blend until smooth.",
+          "picture": "/assets/recipes/6/blend.png"
+        },
+        {
+          "name": "Serve",
+          "description": "Garnish with basil and serve.",
+          "picture": "/assets/recipes/6/poster.png"
+        }
+      ]
+    },
+    "7": {
+      "name": "Caprese Salad",
+      "description": "Fresh salad with tomatoes, mozzarella, and basil.",
+      "picture": "/assets/recipes/7/poster.png",
+      "category": "salads",
+      "cooktime": 10,
+      "ingredients": [
+        { "name": "Tomatoes", "count": "2 pcs" },
+        { "name": "Mozzarella", "count": "200 g" },
+        { "name": "Basil", "count": "15 leaves" },
+        { "name": "Olive Oil", "count": "2 tbsp" }
+      ],
+      "steps": [
+        {
+          "name": "Slice Ingredients",
+          "description": "Slice tomatoes and mozzarella.",
+          "picture": "/assets/recipes/7/slice.png"
+        },
+        {
+          "name": "Arrange",
+          "description": "Alternate tomato and mozzarella slices.",
+          "picture": "/assets/recipes/7/arrange.png"
+        },
+        {
+          "name": "Add Basil",
+          "description": "Place basil leaves between slices.",
+          "picture": "/assets/recipes/7/basil.png"
+        },
+        {
+          "name": "Finish",
+          "description": "Drizzle with olive oil and serve.",
+          "picture": "/assets/recipes/7/poster.png"
+        }
+      ]
+    },
+    "8": {
+      "name": "Panzanella",
+      "description": "Traditional bread salad from Tuscany.",
+      "picture": "/assets/recipes/8/poster.png",
+      "category": "salads",
+      "cooktime": 15,
+      "ingredients": [
+        { "name": "Bread", "count": "200 g" },
+        { "name": "Tomatoes", "count": "3 pcs" },
+        { "name": "Cucumber", "count": "1 pc" },
+        { "name": "Olive Oil", "count": "2 tbsp" }
+      ],
+      "steps": [
+        {
+          "name": "Prepare Bread",
+          "description": "Cube the bread and lightly toast it.",
+          "picture": "/assets/recipes/8/prepare.png"
+        },
+        {
+          "name": "Chop Vegetables",
+          "description": "Dice tomatoes and cucumber.",
+          "picture": "/assets/recipes/8/chop.png"
+        },
+        {
+          "name": "Mix",
+          "description": "Combine bread and vegetables in a bowl.",
+          "picture": "/assets/recipes/8/mix.png"
+        },
+        {
+          "name": "Dress",
+          "description": "Add olive oil and toss before serving.",
+          "picture": "/assets/recipes/8/poster.png"
+        }
+      ]
+    },
+    "9": {
+      "name": "Tiramisu",
+      "description": "Famous Italian dessert with coffee and mascarpone.",
+      "picture": "/assets/recipes/9/poster.png",
+      "category": "desserts",
+      "cooktime": 30,
+      "ingredients": [
+        { "name": "Ladyfingers", "count": "200 g" },
+        { "name": "Mascarpone", "count": "250 g" },
+        { "name": "Coffee", "count": "200 ml" },
+        { "name": "Cocoa Powder", "count": "2 tbsp" }
+      ],
+      "steps": [
+        {
+          "name": "Prepare Coffee",
+          "description": "Brew and cool the coffee.",
+          "picture": "/assets/recipes/9/prepare.png"
+        },
+        {
+          "name": "Layer Cookies",
+          "description": "Dip ladyfingers in coffee and arrange them.",
+          "picture": "/assets/recipes/9/cookies.png"
+        },
+        {
+          "name": "Add Cream",
+          "description": "Spread mascarpone mixture over the cookies.",
+          "picture": "/assets/recipes/9/cream.png"
+        },
+        {
+          "name": "Chill",
+          "description": "Dust with cocoa and refrigerate before serving.",
+          "picture": "/assets/recipes/9/poster.png"
+        }
+      ]
+    },
+    "10": {
+      "name": "Panna Cotta",
+      "description": "Creamy Italian dessert with vanilla flavor.",
+      "picture": "/assets/recipes/10/poster.png",
+      "category": "desserts",
+      "cooktime": 20,
+      "ingredients": [
+        { "name": "Cream", "count": "400 ml" },
+        { "name": "Sugar", "count": "50 g" },
+        { "name": "Gelatin", "count": "10 g" },
+        { "name": "Vanilla Extract", "count": "1 tsp" }
+      ],
+      "steps": [
+        {
+          "name": "Heat Cream",
+          "description": "Warm cream with sugar and vanilla.",
+          "picture": "/assets/recipes/10/heat.png"
+        },
+        {
+          "name": "Add Gelatin",
+          "description": "Stir in dissolved gelatin.",
+          "picture": "/assets/recipes/10/gelatin.png"
+        },
+        {
+          "name": "Pour",
+          "description": "Pour mixture into serving molds.",
+          "picture": "/assets/recipes/10/pour.png"
+        },
+        {
+          "name": "Chill",
+          "description": "Refrigerate until set.",
+          "picture": "/assets/recipes/10/poster.png"
+        }
+      ]
+    },
+    "11": {
+      "name": "Italian Frittata",
+      "description": "Egg-based breakfast with vegetables and cheese.",
+      "picture": "/assets/recipes/11/poster.png",
+      "category": "breakfasts",
+      "cooktime": 20,
+      "ingredients": [
+        { "name": "Eggs", "count": "4 pcs" },
+        { "name": "Bell Pepper", "count": "1 pc" },
+        { "name": "Parmesan", "count": "50 g" },
+        { "name": "Olive Oil", "count": "1 tbsp" }
+      ],
+      "steps": [
+        {
+          "name": "Prepare Ingredients",
+          "description": "Dice the pepper and grate the cheese.",
+          "picture": "/assets/recipes/11/prepare.png"
+        },
+        {
+          "name": "Cook Vegetables",
+          "description": "Sauté pepper until soft.",
+          "picture": "/assets/recipes/11/cook.png"
+        },
+        {
+          "name": "Add Eggs",
+          "description": "Pour beaten eggs and sprinkle cheese.",
+          "picture": "/assets/recipes/11/eggs.png"
+        },
+        {
+          "name": "Finish",
+          "description": "Cook until set and serve warm.",
+          "picture": "/assets/recipes/11/poster.png"
+        }
+      ]
+    },
+    "12": {
+      "name": "Ricotta Toast",
+      "description": "Simple Italian-style breakfast with ricotta and honey.",
+      "picture": "/assets/recipes/12/poster.png",
+      "category": "breakfasts",
+      "cooktime": 10,
+      "ingredients": [
+        { "name": "Bread", "count": "2 slices" },
+        { "name": "Ricotta", "count": "100 g" },
+        { "name": "Honey", "count": "1 tbsp" },
+        { "name": "Walnuts", "count": "20 g" }
+      ],
+      "steps": [
+        {
+          "name": "Toast Bread",
+          "description": "Toast bread until golden.",
+          "picture": "/assets/recipes/12/toast.png"
+        },
+        {
+          "name": "Spread Ricotta",
+          "description": "Spread ricotta evenly on the toast.",
+          "picture": "/assets/recipes/12/spread.png"
+        },
+        {
+          "name": "Add Toppings",
+          "description": "Drizzle honey and add chopped walnuts.",
+          "picture": "/assets/recipes/12/toppings.png"
+        },
+        {
+          "name": "Serve",
+          "description": "Serve immediately while fresh.",
+          "picture": "/assets/recipes/12/poster.png"
+        }
+      ]
+    }
+  }
+}
