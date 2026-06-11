@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}ita.love</title>
+        <meta name="theme-color" content="#C2B690">
+
+        <link rel="icon" href="/assets/favicon.png" type="image/png">
+        <link rel="apple-touch-icon" href="/assets/favicon.png">
+
+        <meta name="description" content="Authentic Italian recipes and cooking inspiration.">
+        <meta name="author" content="ita.love">
+        <meta property="og:title" content="ita.love">
+        <meta property="og:description" content="Authentic Italian recipes and cooking inspiration.">
+        <meta property="og:image" content="https://recipes.zaitsev.im/assets/preview.png">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary_large_image">
+        
+        <link rel="stylesheet" href="/styles/styles.css">
+        {% block css %}{% endblock %}
+    </head>
+
+    <body>
+        <header>
+            <a href="/">
+                <img class="logo" src="/assets/favicon.png" alt="ita.love logo">
+            </a>
+
+            <nav>   
+                <a href="/">home</a>
+                <p class="seperator"> • </p>
+                <a href="/recipes">recipes</a>
+                <p class="seperator"> • </p>
+                <a href="/random">random</a>
+            </nav>
+        </header>
+
+        <main class="wrapper">
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <h1>ita.love — by <a href="https://zaitsev.im" target="_blank" rel="noopener noreferrer">
+                zaitsev.im
+            </a></h1>
+        </footer>
+    </body>
+</html>

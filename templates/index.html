@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/styles/index.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="hero">
+    <img src="{{ recipes[9]['picture'] }}" alt="{{ recipes[9]['name'] }}">
+    <div>
+        <h3 class="label">🔥 POPULAR NOW</h3>
+        <h2>{{ recipes[9]['name'] }}</h2>
+        <p>{{ recipes[9]['description'] }}</p>
+        <a class="see-more" href="/recipe?id={{ recipes[9]['id'] }}">See more... ></a>
+    </div>
+</div>
+
+<div class="categories">
+    {% for item in categories %}
+        <a href="/recipes?category={{ item['id'] }}" class="card">
+            <img src="{{ item['picture'] }}">
+            <span class="name">{{ item['name'] }}</span>
+        </a>
+    {% endfor %}
+</div>
+
+{% endblock %}

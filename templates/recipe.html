@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ recipe['name'] }} - 
+{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" href="/styles/recipe.css">
+
+<style>
+    :root {
+        --accent: {{ category.accent }};
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="select">
+
+    {% set current_index = namespace(value=-1) %}
+
+    {% for item in recipes %}
+        {% if item['id']|int == recipe['id']|int %}
+            {% set current_index.value = loop.index0 %}
+        {% endif %}
+    {% endfor %}
+
+    {% if current_index.value > 0 %}
+        <a class="arrow" href="/recipe?id={{ recipes[current_index.value - 1]['id'] }}"><</a>
+    {% else %}
+        <a class="arrow disabled">•</a>
+    {% endif %}
+
+    <div class="name">
+        <h3 class="category">{{ category['name'] }}</h3>
+        <h1>{{ recipe['name'] }}</h1>
+    </div>
+    
+    {% if current_index.value < recipes|length - 1 %}
+        <a class="arrow" href="/recipe?id={{ recipes[current_index.value + 1]['id'] }}">></a>
+    {% else %}
+        <a class="arrow disabled">•</a>
+    {% endif %}
+
+</div>
+
+<div class="recipe">
+    <div class="information">
+        <img src="{{ recipe['picture'] }}" alt="{{ recipe['name'] }}">
+        <div class="description">
+            <p class="cook-time">Cook Time: <b>{{ recipe['cooktime'] }} min</b></p>
+            <h3>{{ recipe['description'] }}</h3>
+        </div>
+    </div>
+
+    <div class="ingredients">
+        <h2>INGREDIENTS</h2>
+        <ul>
+            {% for item in recipe['ingredients'] %}
+                <li>{{ item['name'] }} - {{ item['count'] }}</li>
+            {% endfor %}
+        </ul>
+
+        <script>
+            document.querySelectorAll('.ingredients li').forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        </script>
+    </div>
+</div>
+
+<div class="instruction">
+    {% for item in recipe['steps'] %}
+        <div>
+            <img src="{{ item['picture'] }}" alt="{{ item['name'] }}">
+            <div class="information">
+                <h3>{{ item['name'] }}</h3>
+                <p>{{ item['description'] }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

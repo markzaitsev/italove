@@ -1,0 +1,45 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+
+{% if category %}
+{{ category['name'] }} -
+{% else %}
+Recipes -
+{% endif %}
+
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/styles/recipes.css">
+{% endblock %}
+
+{% block content %}
+
+<h1>
+    {% if category %}
+        {{ category['name'] }}
+    {% else %}
+        Recipes
+    {% endif %}
+</h1>
+
+<div class="recipes">
+    {% for item in recipes %}
+        <div class="card">
+            <img src="{{ item['picture'] }}" alt="{{ item['name'] }}">
+            <div class="information">
+                {% if not category %}
+                    <h3 class="category">{{ categories[ item.category ] }}</h3>
+                {% endif %}
+                
+                <h2>{{ item['name'] }}</h2>
+                <p>{{ item['description'] }}</p>
+                <a class="see-more" href="/recipe?id={{ item['id'] }}">See more... ></a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
