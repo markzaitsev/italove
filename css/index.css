@@ -1,0 +1,100 @@
+
+.wrapper .hero {
+    display: flex;
+    flex-direction: row;
+    border-radius: 42px;
+}
+
+.wrapper .hero > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.wrapper .hero h2, .wrapper .hero h3, 
+.wrapper .hero a, .wrapper .hero p {
+    margin: 0;
+}
+
+.wrapper .hero .label {
+    margin-bottom: 3px;
+    opacity: 0.5;
+}
+
+.wrapper .hero img {
+    width: 25vw;
+    max-height: 400px;
+    object-fit: cover;
+    max-width: 450px;
+}
+
+.wrapper .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 0;
+}
+
+.wrapper .categories > .card {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+}
+
+.wrapper .categories > .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+.wrapper .categories > .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.wrapper .categories > .card:hover img {
+    opacity: 1;
+}
+
+.wrapper .categories > .card:hover .name {
+    background: #B6771D;
+    color: black;
+}
+
+.wrapper .categories > .card .name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 820px) {
+    .wrapper .hero {
+        flex-direction: column;
+    }
+
+    .wrapper .hero img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .wrapper .hero > div {
+        padding: 35px;
+    }
+
+    .wrapper .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+:root {
+    --body-color: #E4D6A9;
+    --header-color: #978F66;
+    --div-color: #DBCEA5;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    background: var(--body-color);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-align: center;
+    box-sizing: border-box;
+
+    background: var(--header-color);
+    width: 75vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    gap: 2px;
+}
+
+header {
+    border-radius: 0px 0px 42px 42px;
+    padding: 20px 35px;
+    justify-content: space-between;
+}
+
+header nav .seperator {
+    color: #DBCEA5;
+    display: inline;
+}
+
+header nav .seperator:hover {
+    cursor: default;
+}
+
+footer {
+    border-radius: 42px 42px 0px 0px;
+    margin-top: auto;
+    padding: 15px 0;
+    justify-content: center;
+}
+
+footer h1 {
+    margin: 10px;
+    font-size: 20px;
+    color: #DBCEA5;
+}
+
+footer h1 a {
+    text-decoration: none;
+    color: #ceb04c;
+    transition: 0.2s;
+}
+
+footer h1 a:hover {
+    opacity: .6;
+}
+
+header .logo {
+    width: auto;
+    height: 36px;
+    object-fit: cover;
+}
+
+header nav > a {
+    color: #FFF7CD;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+header nav > a:hover {
+    opacity: 0.5;
+}
+
+#menu {
+  position: absolute;
+  inset: 0;
+  width: 28px;
+  height: 28px;
+
+  opacity: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.wrapper {
+    width: 70vw;
+    margin: 25px auto;
+    max-width: 1200px;
+    display: flex;
+    border-radius: 42px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper > div {
+    background: var(--div-color);
+    border-radius: 42px;
+    overflow: hidden;
+}
+
+button, .button {
+    background: #978F66 !important;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover,
+.button:hover {
+    opacity: .8;
+}
+
+.see-more {
+    text-decoration: none;
+    color: #622B14;
+    margin-top: 10px !important;
+    font-weight: 500;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.see-more:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 920px) {
+    .wrapper {
+        width: 95vw;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header, footer {
+        width: 85vw;
+    }
+}
